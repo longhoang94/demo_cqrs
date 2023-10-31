@@ -15,6 +15,7 @@ public class MyMediator implements Mediator {
     public MyMediator(final AbstractApplicationContext context) {
         this.context = context;
     }
+
     @Override
     public <T> T send(Request<T> request) {
         if (request == null) {
